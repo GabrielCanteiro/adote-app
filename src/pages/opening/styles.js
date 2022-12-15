@@ -1,0 +1,60 @@
+import styled from "styled-components";
+
+
+export const Container = styled.div`
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`
+
+export const Logo = styled.div`
+    margin: 0;
+    animation-duration: .7s;
+    animation-name: open;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: absolute;
+    height: 35%;
+
+    
+    @keyframes open {
+        from{
+            opacity: 10%;
+            height: 30%;
+
+        }
+        to{
+            opacity: 100%;
+            height: 35%;
+
+        }
+        
+    }
+
+`
+
+export const ButtonOpen = styled.button`
+    background-color: #D8BEA9;
+    border: 1px solid #A66743;
+    color: #A66743;
+    width: 30%;
+    padding: 5px;
+    border-radius: 25px;
+    animation: button 1s;
+    z-index: 1;
+
+
+    @keyframes button {
+        from{
+            opacity: 0;
+        }
+
+        to{
+            opacity: 1;
+        }
+        
+    }
+`
