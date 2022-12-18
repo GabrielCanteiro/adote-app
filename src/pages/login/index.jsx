@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
   }  
   
   const toHome = () => {
-    navigate('/Register')
+    navigate('/Home')
   }
 
   return (
@@ -25,8 +25,8 @@ import { useNavigate } from 'react-router-dom';
       <h1>LOGIN</h1>
       <Input leftIcon={<MdAlternateEmail />} placeholder='E-mail'/>
       <Input leftIcon={<MdOutlineVpnKey />} placeholder='Password' type='password'/>
-      <Button text={'Sign Up'} onClick={toRegister} />
-      <Button text={'Register'} onClick={toHome} />
+      <Button text={'Sign Up'} onClick={toHome} />
+      <Button text={'Register'} onClick={toRegister} />
       <span>Forgot my passowrd</span>
     </LoginContainer>
   </>
