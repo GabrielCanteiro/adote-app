@@ -12,6 +12,7 @@ export const CatContainer = styled.div`
         border: 1px solid #A66743;
         border-radius: 6px 6px 0 0 ;
         width: 90%;
+        max-height: 60%;
 }
 
 `
@@ -51,7 +52,7 @@ export const InfoContainer = styled.div`
     
 `
 
-export const Bottom = styled.div`
+export const ButtonContainer = styled.div`
     margin-bottom: 0;
     height: 77px;
     width: 100%;
@@ -60,7 +61,10 @@ export const Bottom = styled.div`
     justify-content: space-around;
     align-items: center;
 
-    div{
+`
+
+export const Button = styled.div`
+    
         margin-top: -70px;
         flex-direction: row;
         width: 25%;
@@ -70,10 +74,20 @@ export const Bottom = styled.div`
         border: 3px solid #D8BEA9;
         border-radius: 100px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+        
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 29px;
+            height: 35px;
+        }
 
-    div:nth-child(2){
-        border: 3px solid #A66743;
+        p{
+            margin: -2px 17px;
+            font-weight: bold;
+            font-size:20px;
+            color: #FFFFFF;
+        }
 
-    }
 `
