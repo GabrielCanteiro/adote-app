@@ -5,6 +5,7 @@ import { LoginContainer } from './styles'
 import { MdAlternateEmail, MdOutlineVpnKey } from "react-icons/md";
 import { Button } from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
+import { Container } from '../opening/styles';
 
 
  const Login = () => {
@@ -19,7 +20,7 @@ import { useNavigate } from 'react-router-dom';
   }
 
   return (
-  <>
+  <Container>
     <Head/> 
     <LoginContainer>
       <h1>LOGIN</h1>
@@ -29,7 +30,7 @@ import { useNavigate } from 'react-router-dom';
       <Button text={'Register'} onClick={toRegister} />
       <span>Forgot my passowrd</span>
     </LoginContainer>
-  </>
+  </Container>
 
   )
 }

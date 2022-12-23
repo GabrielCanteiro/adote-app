@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import { Head } from '../../components/Head'
 import { Button, ButtonContainer, CatContainer, InfoContainer } from './styles'
+import { Container } from '../opening/styles'
 import { MdInfoOutline } from "react-icons/md";
 
 import right_arrow_button from '../../assets/right_arrow_button.png'
@@ -29,11 +30,11 @@ export const Home = () => {
     }
 
   return (
-    <>
+   <Container>
     <Head/>
     <CatContainer>
 
-    <img src={cats.url} alt="profile" />
+    <img src={cats.url} alt="profile"/>
 
 <InfoContainer>
     <div>
@@ -62,6 +63,6 @@ export const Home = () => {
 
     </ButtonContainer>
 
-    </>
+   </Container>
   )
 }

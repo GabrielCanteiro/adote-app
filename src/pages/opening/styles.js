@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    width: 100%; 
-    height: 100vh;
-    display: flex;
+    width: 375px; 
+    height: 667px;
     justify-content: center;
+    display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    margin-top: 7%;
 `
 
 export const Logo = styled.div`

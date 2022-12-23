@@ -5,14 +5,16 @@ export const CatContainer = styled.div`
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    width: 375px;
+    height: 667px;
+    margin: 0 auto;
 
 
     img{
         border: 1px solid #A66743;
         border-radius: 6px 6px 0 0 ;
         width: 90%;
-        max-height: 60%;
+        max-height: 300px;
 }
 
 `
@@ -54,7 +56,7 @@ export const InfoContainer = styled.div`
 
 export const ButtonContainer = styled.div`
     margin-bottom: 0;
-    height: 77px;
+    height: 90px;
     width: 100%;
     background-color: #D8BEA9;
     display: flex;
@@ -70,6 +72,7 @@ export const Button = styled.div`
         width: 25%;
         height: 90px;
         background-color: #FFFFFF;
+        cursor: pointer;
 
         border: 3px solid #D8BEA9;
         border-radius: 100px;
@@ -91,3 +94,4 @@ export const Button = styled.div`
         }
 
 `
+
